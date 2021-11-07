@@ -1,0 +1,333 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.wrapper_login {
+  width: 450px;
+  padding: 47px 30px 50px 30px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+}
+.wrapper_login header {
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper_login form {
+  margin: 40px 0;
+}
+form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake {
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+form .field .input-area {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #5372f0;
+  border-radius: 10px;
+  border: 1px solid #bfbfbf;
+  transition: all 0.2s ease;
+  text-indent: 10px;
+  transition: linear 0.2s;
+}
+form .field input:focus,
+form .field.valid input {
+  border-color: #5372f0;
+  text-indent: 20px;
+}
+form .field.shake input,
+form .field.error input {
+  border-color: #dc3545;
+}
+.field .input-area i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon {
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon {
+  color: #5372f0;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon {
+  color: #bfbfbf;
+}
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt {
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error {
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error {
+  display: block;
+}
+form .pass-txt {
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper_login a {
+  color: #0066ff;
+  text-decoration: none;
+}
+.wrapper_login a:hover {
+  text-decoration: underline;
+}
+form input[type="submit"] {
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #0066ff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover {
+  background: #2c52ed;
+}
+.login_google {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+.google_icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google_icon img {
+  width: 30px;
+  height: 30px;
+}
+.google_icon p {
+  font-size: 25px;
+  padding-top: 18px;
+  padding-left: 5px;
+  font-weight: 500;
+}
+.btn-link {
+  width: 93px;
+  height: 35px;
+  background: rgba(13, 12, 34, 0.05);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+.btn-link:hover {
+  background: rgba(13, 12, 34, 0.05);
+}
+.input-area img {
+  margin-left: 350px;
+  margin-top: -4.5rem;
+}
+
+/*đăng kí tài khoản*/
+.dangky_ground {
+  width: 100%;
+}
+.dangky_ground h1 {
+  font-size: 34px;
+  text-align: center;
+  font-family: inter;
+  color: #0066ff;
+  font-weight: 600;
+}
+.dangky_ground .dangky_form {
+  margin: 0 20px 20px;
+}
+.dangky_form .input_dk {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.dangky_form .input_dk:focus {
+  border: 2px solid #0066ff;
+}
+.dangky_form label {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ccc;
+}
+.btn_dk {
+  width: 400px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0 102 255);
+  color: #fff;
+  font-weight: 600;
+}
+.select_dk {
+  width: 410px;
+  display: flex;
+  margin: auto;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.dangky_form_check {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.dangky_form_check label {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ccc;
+}
+.check_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check_form label {
+  padding-top: 10px;
+}
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  background-color: #d5d5d5;
+}
+/*radio*/
+.wrapper_radio {
+  display: inline-flex;
+  background: #fff;
+  padding: 25px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+.wrapper_radio .option {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper_radio .option .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper_radio .option .dot::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"] {
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2 {
+  border-color: #0069d9;
+  background: #0069d9;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot {
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span {
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span {
+  color: #fff;
+}
+.dangky_ground span {
+  color: red;
+  display: block;
+  padding: 5px 0px;
+}
+#user_error,
+#pass_error,
+#name_error,
+#mail_error,
+#phone_error {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #c62828;
+  text-align: center;
+  padding: 5px 8px;
+  border: 1px red;
+  display: none;
+}
